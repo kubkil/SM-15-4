@@ -22,7 +22,7 @@ const grades = [1, 5, 5, 5, 4, 3, 3, 2, 1];
 
 const calcAverageGrade = (...gradesArray) => gradesArray.reduce((accumulator, currentValue) => accumulator + currentValue) / gradesArray.length;
 
-calcAverageGrade(...grades);
+console.log(calcAverageGrade(...grades));
 
 // const calcAverageGrade = (...gradesArray) => {
 //                           let total = 0;
@@ -41,6 +41,9 @@ calcAverageGrade(...grades);
 const arrayMix = [1, 4, 'Iwona', false, 'Nowak'];
 const [, , firstName, ,] = arrayMix;
 const [, , , , lastName] = arrayMix;
+
+console.log(firstName);
+console.log(lastName);
 
 // let firstName;
 // let lastName;
